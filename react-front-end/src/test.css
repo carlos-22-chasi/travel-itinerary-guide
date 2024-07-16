@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', 'sans-serif';
+  box-sizing: border-box;
+}
+
+.main-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+/* -------------------------------left side------------------------------------------ */
+.left-container {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+
+.left-top, .left-middle, .left-bottom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.left-top {
+  height: 10%;
+  background-color: white;
+}
+
+.left-top-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#itineraryNames{
+  width: 80%; 
+  height: 25%;
+  padding: 10px;
+}
+
+#createButton{
+  width: 18px;
+  height: 18px;
+  background-color: rgb(15, 183, 255);
+  color: white;
+  margin-left: 10%;
+  position: relative;
+  font-weight: bold;
+}
+
+#createButton:hover {
+  background-color: rgb(37, 82, 208);
+}
+
+#createButton::after {
+  content: 'Create New Itinerary';
+  position: absolute;
+  bottom: 155%; /* Position above the button */
+  left: 50%;
+  background-color: #a7a4a4;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  white-space: nowrap;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+}
+
+#createButton:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+.left-middle {
+  height: 10%;
+  background-color: purple;
+}
+
+.left-bottom {
+  height: 80%;
+  background-color: white;
+}
+
+/* -------------------------------middle side------------------------------------------ */
+.middle-container {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.middle-top, .middle-bottom {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.middle-top {
+  background-color: red;
+}
+
+.middle-bottom {
+  background-color: blue;
+}
+
+/* -------------------------------right side------------------------------------------ */
+.right-container {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+/* -------------------------------miscelanius------------------------------------------ */
+select {
+  width: 80%; 
+  height: 25%;
+  color: black;
+}
